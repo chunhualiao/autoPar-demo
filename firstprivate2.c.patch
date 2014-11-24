@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/firstprivate2.c rose_firstprivate2.c
+0a1
+> #include <omp.h>
+7a8
+> #pragma omp parallel for private (ii) firstprivate (volnew_o8)

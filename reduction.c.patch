@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/reduction.c rose_reduction.c
+0a1
+> #include <omp.h>
+8a9
+> #pragma omp parallel for private (i) reduction (+:sum,xx) reduction (-:yy) reduction (*:zz)

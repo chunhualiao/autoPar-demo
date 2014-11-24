@@ -1,0 +1,43 @@
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Unparallelizable loop at line:32 due to the following dependencies:
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@37:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@38:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@38:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@39:15->SgVarRefExp:aa@38:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@39:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@39:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@40:15->SgVarRefExp:aa@39:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@40:15->SgVarRefExp:aa@38:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@40:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@40:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@41:15->SgVarRefExp:aa@40:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@41:15->SgVarRefExp:aa@39:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@41:15->SgVarRefExp:aa@38:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@41:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@41:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@42:15->SgVarRefExp:aa@41:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@42:15->SgVarRefExp:aa@40:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@42:15->SgVarRefExp:aa@39:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@42:15->SgVarRefExp:aa@38:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@42:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@42:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@42:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@41:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@40:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@39:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@38:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@43:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@43:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@42:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@41:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@40:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@39:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@38:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@37:15 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:aa@44:15->SgVarRefExp:aa@36:15 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:ddb[aa -> bb -> values[i]]@61:12->SgPntrArrRefExp:ddb[aa -> bb -> values[i]]@61:12 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:ddb[aa -> bb -> values[i]]@61:12->SgPntrArrRefExp:ddb[aa -> bb -> values[i]]@61:12 <= -1;||::
+
+Automatically parallelized a loop at line:58

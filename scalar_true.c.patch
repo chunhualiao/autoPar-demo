@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/scalar_true.c rose_scalar_true.c
+0a1
+> #include <omp.h>
+9a10
+> #pragma omp parallel for private (tmp,i)
+20a21
+> #pragma omp parallel for private (i) lastprivate (tmp)

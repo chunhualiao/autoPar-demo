@@ -1,0 +1,7 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Unparallelizable loop at line:10 due to the following dependencies:
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:pi@12:9->SgVarRefExp:pi@11:9 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:pi@12:9->SgVarRefExp:pi@11:9 <= -1;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:pi@12:9->SgVarRefExp:pi@11:9 <= -1;||::

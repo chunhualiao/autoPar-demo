@@ -1,0 +1,22 @@
+make[2]: Entering directory `/home/liao6/rose/freshmaster/buildtree/projects/autoParallelization/tests'
+../autoPar --edg:no_warnings -w -rose:verbose 0 --edg:restrict -rose:autopar:unique_indirect_index  -I/home/liao6/rose/freshmaster/sourcetree/src/frontend/SageIII -c -annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/clibfunc.annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/Stress2.cc
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Automatically parallelized a loop at line:29
+
+Automatically parallelized a loop at line:76
+
+Automatically parallelized a loop at line:118
+
+Automatically parallelized a loop at line:157
+
+Automatically parallelized a loop at line:185
+
+Automatically parallelized a loop at line:220
+
+Automatically parallelized a loop at line:268
+
+Automatically parallelized a loop at line:314
+
+Automatically parallelized a loop at line:347
+make[2]: Leaving directory `/home/liao6/rose/freshmaster/buildtree/projects/autoParallelization/tests'

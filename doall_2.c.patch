@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/doall_2.c rose_doall_2.c
+0a1
+> #include <omp.h>
+4a5
+> #pragma omp parallel for private (i,j)
+5a6
+> #pragma omp parallel for private (j)

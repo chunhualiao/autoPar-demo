@@ -1,0 +1,76 @@
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+Enabling compare user defined OpenMP pragmas to auto parallelization generated ones ...
+
+Automatically parallelized a loop at line:131
+
+Unparallelizable loop at line:132 due to the following dependencies:
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:f[i][0]@137:17->SgPntrArrRefExp:f[i][0]@137:17 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:f[i][0]@137:17->SgPntrArrRefExp:f[i][0]@137:17 <= -1;||::
+
+Automatically parallelized a loop at line:194
+
+Automatically parallelized a loop at line:195
+
+Automatically parallelized a loop at line:199
+
+Automatically parallelized a loop at line:200
+
+Automatically parallelized a loop at line:243
+
+Automatically parallelized a loop at line:244
+<<<<<<<<
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:77
+user defined      :#pragma omp parallel
+--------
+compiler generated:
+>>>>>>>>
+
+<<<<<<<<
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:79
+user defined      :#pragma omp single
+--------
+compiler generated:
+>>>>>>>>
+
+<<<<<<<<
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:191
+user defined      :#pragma omp parallel
+--------
+compiler generated:
+>>>>>>>>
+
+<<<<<<<<
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:193
+user defined      :#pragma omp for private (j,i)
+--------
+compiler generated:#pragma omp parallel for private (i,j)
+>>>>>>>>
+
+<<<<<<<<
+user defined      :
+--------
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:195
+compiler generated:#pragma omp parallel for private (j)
+>>>>>>>>
+
+<<<<<<<<
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:198
+user defined      :#pragma omp for private (resid,j,i) reduction (+:error) nowait
+--------
+compiler generated:#pragma omp parallel for private (resid,i,j) reduction (+:error)
+>>>>>>>>
+
+<<<<<<<<
+user defined      :
+--------
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:200
+compiler generated:#pragma omp parallel for private (resid,j) reduction (+:error) firstprivate (omega,ax,ay,b)
+>>>>>>>>
+
+<<<<<<<<
+user defined      :
+--------
+/home/liao6/rose/freshmaster/sourcetree/tests/CompileTests/OpenMP_tests/jacobi.c:244
+compiler generated:#pragma omp parallel for private (xx,yy,temp,j) reduction (+:error) firstprivate (dx,dy)
+>>>>>>>>
+

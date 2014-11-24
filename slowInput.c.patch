@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/slowInput.c rose_slowInput.c
+0a1
+> #include <omp.h>
+20a21
+> #pragma omp parallel for private (index,i) firstprivate (length,stress2)

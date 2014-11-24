@@ -1,0 +1,101 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Unparallelizable loop at line:14 due to the following dependencies:
+1*1 IO_DEP; commonlevel = 1 CarryLevel = (0,0) SgExprStatement:OtherFunc(k,l,m,n,o,p,afi,bfi,s);@18:7->SgExprStatement:OtherFunc(k,l,m,n,o,p,afi,bfi,s);@18:7 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:k@18:17 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:k@18:17->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:l@18:20 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:l@18:20->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:m@18:23 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:m@18:23->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:n@18:26 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:n@18:26->SgVarRefExp:p@18:32 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:p@18:32->SgVarRefExp:o@18:29 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:o@18:29->SgVarRefExp:p@18:32 * 0;||::
+1*2 IO_DEP; commonlevel = 1 CarryLevel = (0,0) SgExprStatement:OtherFunc(k,l,m,n,o,p,afi,bfi,s);@18:7->SgExprStatement:c[3 * i_nom_1 + k_nom_2] = s[k_nom_2];@20:10 * 0;* 0;||::
+2*2 OUTPUT_DEP; commonlevel = 2 CarryLevel = (0,0) SgPntrArrRefExp:c[3 * i_nom_1 + k_nom_2]@20:11->SgPntrArrRefExp:c[3 * i_nom_1 + k_nom_2]@20:11 <= -1;* 0;||* 0;* 0;||::
+2*2 OUTPUT_DEP; commonlevel = 2 CarryLevel = (0,0) SgPntrArrRefExp:c[3 * i_nom_1 + k_nom_2]@20:11->SgPntrArrRefExp:c[3 * i_nom_1 + k_nom_2]@20:11 <= -1;* 0;||* 0;* 0;||::
+2*1 IO_DEP; commonlevel = 1 CarryLevel = (0,0) SgExprStatement:c[3 * i_nom_1 + k_nom_2] = s[k_nom_2];@20:10->SgExprStatement:OtherFunc(k,l,m,n,o,p,afi,bfi,s);@18:7 * 0;||* 0;||::
+
+Automatically parallelized a loop at line:19

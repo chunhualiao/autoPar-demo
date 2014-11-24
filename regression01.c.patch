@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/regression01.c rose_regression01.c
+0a1
+> #include <omp.h>
+18a19
+> #pragma omp parallel for private (icol) firstprivate (e,f,g)
+26a27
+> #pragma omp parallel for private (icol) firstprivate (hj1)

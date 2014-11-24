@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/firstprivate3.c rose_firstprivate3.c
+0a1
+> #include <omp.h>
+26a27
+> #pragma omp parallel for private (xx,yy,temp,i,j) reduction (+:error)
+27a28
+> #pragma omp parallel for private (xx,yy,temp,j) reduction (+:error) firstprivate (dx,dy)

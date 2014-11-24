@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/matrixmultiply2.c rose_matrixmultiply2.c
+0a1
+> #include <omp.h>
+14a15
+> #pragma omp parallel for private (i,j,k)
+16a17
+> #pragma omp parallel for private (j)

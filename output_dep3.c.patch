@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/output_dep3.c rose_output_dep3.c
+0a1
+> #include <omp.h>
+7a8
+> #pragma omp parallel for private (y,i,j)
+8a9
+> #pragma omp parallel for private (y,j) lastprivate (x)

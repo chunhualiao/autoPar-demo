@@ -1,0 +1,22 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Unparallelizable loop at line:11 due to the following dependencies:
+2*2 OUTPUT_DEP; commonlevel = 2 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:tmp[icol]@20:10->SgPntrArrRefExp:tmp[icol]@20:10 <= -1;* 0;||* 0;== 0;||::
+2*2 OUTPUT_DEP; commonlevel = 2 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:tmp[icol]@20:10->SgPntrArrRefExp:tmp[icol]@20:10 <= -1;* 0;||* 0;== 0;||::
+2*3 TRUE_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:tmp[icol]@20:10->SgPntrArrRefExp:tmp[icol]@28:48 <= -1;* 0;* 0;||* 0;* 0;== 0;||::
+3*3 OUTPUT_DEP; commonlevel = 3 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;* 0;||* 0;* 0;* 0;||* 0;* 0;* 0;||::
+3*3 OUTPUT_DEP; commonlevel = 3 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;* 0;||* 0;* 0;* 0;||* 0;* 0;* 0;||::
+3*3 TRUE_DEP; commonlevel = 3 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;* 0;||* 0;* 0;* 0;||* 0;* 0;* 0;||::
+3*3 ANTI_DEP; commonlevel = 3 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;* 0;||* 0;* 0;* 0;||* 0;* 0;* 0;||::
+3*2 ANTI_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:tmp[icol]@28:48->SgPntrArrRefExp:tmp[icol]@20:10 <= -1;* 0;||* 0;* 0;||* 0;== 0;||::
+
+Automatically parallelized a loop at line:19
+
+Unparallelizable loop at line:25 due to the following dependencies:
+2*2 OUTPUT_DEP; commonlevel = 2 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;||* 0;* 0;||::
+2*2 OUTPUT_DEP; commonlevel = 2 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;||* 0;* 0;||::
+2*2 TRUE_DEP; commonlevel = 2 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;||* 0;* 0;||::
+2*2 ANTI_DEP; commonlevel = 2 CarryLevel = (0,0) SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10->SgPntrArrRefExp:a[icol +(jrow + l8) * 8]@28:10 <= -1;* 0;||* 0;* 0;||::
+
+Automatically parallelized a loop at line:27

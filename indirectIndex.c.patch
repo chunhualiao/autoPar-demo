@@ -1,0 +1,9 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/indirectIndex.c rose_indirectIndex.c
+0a1
+> #include <omp.h>
+19a20
+> #pragma omp parallel for private (index,i) firstprivate (eps_failure_model)
+30a31
+> #pragma omp parallel for private (index1,i) firstprivate (eps_failure_model)
+44a45
+> #pragma omp parallel for private (index,j)

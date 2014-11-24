@@ -1,0 +1,17 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/jacobi_seq.c rose_jacobi_seq.c
+0a1
+> #include <omp.h>
+82a83
+> #pragma omp parallel for private (xx,yy,i,j) firstprivate (n,m)
+142a143
+> #pragma omp parallel for private (i,j)
+143a144
+> #pragma omp parallel for private (j)
+146a147
+> #pragma omp parallel for private (resid,i,j) reduction (+:error)
+147a148
+> #pragma omp parallel for private (resid,j) reduction (+:error) firstprivate (omega,ax,ay,b)
+184a185
+> #pragma omp parallel for private (xx,yy,temp,i,j) reduction (+:error)
+185a186
+> #pragma omp parallel for private (xx,yy,temp,j) reduction (+:error) firstprivate (dx,dy)

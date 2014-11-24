@@ -1,0 +1,4 @@
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+constant folding: unhandled expression type:SgThisExp
+
+Automatically parallelized a loop at line:24

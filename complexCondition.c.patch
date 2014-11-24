@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/complexCondition.c rose_complexCondition.c
+0a1
+> #include <omp.h>
+14a15
+> #pragma omp parallel for private (k_nom_22) firstprivate (numAB)

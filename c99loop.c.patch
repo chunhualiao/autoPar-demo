@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/c99loop.c rose_c99loop.c
+0a1
+> #include <omp.h>
+8a9
+> #pragma omp parallel for private (j_nom_2)

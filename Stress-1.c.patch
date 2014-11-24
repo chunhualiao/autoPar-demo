@@ -1,0 +1,9 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/Stress-1.c rose_Stress-1.c
+0a1
+> #include <omp.h>
+14a15
+> #pragma omp parallel for private (index,i) firstprivate (eps_failure_model,length)
+46a47
+> #pragma omp parallel for private (index,szz,i) firstprivate (length,quarterDelta)
+84a85
+> #pragma omp parallel for private (shearr,sheari,avgMod,nz,i) firstprivate (length)

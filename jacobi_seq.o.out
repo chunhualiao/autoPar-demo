@@ -1,0 +1,20 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Automatically parallelized a loop at line:83
+
+Unparallelizable loop at line:84 due to the following dependencies:
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:f[i][0]@89:6->SgPntrArrRefExp:f[i][0]@89:6 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:f[i][0]@89:6->SgPntrArrRefExp:f[i][0]@89:6 <= -1;||::
+
+Automatically parallelized a loop at line:143
+
+Automatically parallelized a loop at line:144
+
+Automatically parallelized a loop at line:147
+
+Automatically parallelized a loop at line:148
+
+Automatically parallelized a loop at line:185
+
+Automatically parallelized a loop at line:186

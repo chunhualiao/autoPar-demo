@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/livenessTest.c rose_livenessTest.c
+0a1
+> #include <omp.h>
+77a78
+> #pragma omp parallel for private (nel,l) firstprivate (ub,t1)
+267a268
+> #pragma omp parallel for private (nel,l) firstprivate (ub,t1)

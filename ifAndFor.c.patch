@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/ifAndFor.c rose_ifAndFor.c
+0a1
+> #include <omp.h>
+5a6
+> #pragma omp parallel for private (i)

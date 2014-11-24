@@ -1,0 +1,12 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Unparallelizable loop at line:5 due to the following dependencies:
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[numNodes2]@9:15->SgPntrArrRefExp:nodelist[j]@8:15 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[j]@8:15->SgPntrArrRefExp:nodelist[numNodes2]@9:15 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[numNodes2]@9:15->SgPntrArrRefExp:nodelist[numNodes2]@9:15 <= -1;||::
+1*1 OUTPUT_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[numNodes2]@9:15->SgPntrArrRefExp:nodelist[numNodes2]@9:15 <= -1;||::
+1*1 TRUE_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[j]@8:15->SgPntrArrRefExp:nodelist[numNodes2]@8:29 <= -1;||::
+1*1 ANTI_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[numNodes2]@8:29->SgPntrArrRefExp:nodelist[j]@8:15 <= -1;||::
+1*1 TRUE_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[numNodes2]@9:15->SgPntrArrRefExp:nodelist[numNodes2]@8:29 <= -1;||::
+1*1 ANTI_DEP; commonlevel = 1 CarryLevel = (0,0) SgPntrArrRefExp:nodelist[numNodes2]@8:29->SgPntrArrRefExp:nodelist[numNodes2]@9:15 <= -1;||::

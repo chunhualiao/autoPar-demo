@@ -1,0 +1,27 @@
+make[2]: Entering directory `/home/liao6/rose/freshmaster/buildtree/projects/autoParallelization/tests'
+../autoPar --edg:no_warnings -w -rose:verbose 0 --edg:restrict -rose:autopar:unique_indirect_index  -I/home/liao6/rose/freshmaster/sourcetree/src/frontend/SageIII -c -annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/std_vector.annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/doall_vector2.C
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+constant folding: unhandled expression type:SgMemberFunctionRefExp
+
+Unparallelizable loop at line:7 due to the following dependencies:
+1*1 IO_DEP; commonlevel = 1 CarryLevel = (0,0) SgExprStatement:v1 . at(i) = v1[i] + 1;@8:5->SgExprStatement:v1 . at(i) = v1[i] + 1;@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:16->SgVarRefExp:v1@8:5 <= -1;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:5->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgVarRefExp:v1@8:5 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:16->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgVarRefExp:v1@8:16 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:16->SgVarRefExp:v1@8:5 <= -1;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:5->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgVarRefExp:v1@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:5->SgVarRefExp:v1@8:16 <= -1;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:16->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgVarRefExp:v1@8:16 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1[i]@0:0->SgVarRefExp:v1@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:5->SgFunctionCallExp:v1[i]@0:0 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1[i]@0:0->SgVarRefExp:v1@8:16 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgVarRefExp:v1@8:16->SgFunctionCallExp:v1[i]@0:0 * 0;||::
+1*1 SCALAR_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1[i]@0:0->SgFunctionCallExp:v1 . at(i)@8:5 * 0;||::
+1*1 SCALAR_BACK_DEP; commonlevel = 1 CarryLevel = (0,0) SgFunctionCallExp:v1 . at(i)@8:5->SgFunctionCallExp:v1[i]@0:0 * 0;||::
+make[2]: Leaving directory `/home/liao6/rose/freshmaster/buildtree/projects/autoParallelization/tests'

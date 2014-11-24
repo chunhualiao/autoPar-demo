@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/plusAssign.c rose_plusAssign.c
+0a1
+> #include <omp.h>
+7a8
+> #pragma omp parallel for private (j)

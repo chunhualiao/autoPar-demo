@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/scalar_anti.c rose_scalar_anti.c
+0a1
+> #include <omp.h>
+36a37
+> #pragma omp parallel for private (i)

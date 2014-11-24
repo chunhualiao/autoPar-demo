@@ -1,0 +1,6 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Automatically parallelized a loop at line:27
+
+Automatically parallelized a loop at line:28

@@ -1,0 +1,7 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/matrixVectormultiply.c rose_matrixVectormultiply.c
+0a1
+> #include <omp.h>
+11a12
+> #pragma omp parallel for private (i,j)
+14a15
+> #pragma omp parallel for private (j) reduction (+:sum)

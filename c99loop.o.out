@@ -1,0 +1,7 @@
+Enabling generating patch files for auto parallelization ...
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Unparallelizable loop at line:8 due to the following dependencies:
+2*2 ANTI_DEP; commonlevel = 2 CarryLevel = (0,0)  Is precise SgPntrArrRefExp:a[i_nom_1 + 1][j_nom_2]@10:26->SgPntrArrRefExp:a[i_nom_1][j_nom_2]@10:11 == -1;* 0;||* 0;== 0;||::
+
+Automatically parallelized a loop at line:9

@@ -1,0 +1,5 @@
+diff -ar /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/functionCall.c rose_functionCall.c
+0a1
+> #include <omp.h>
+18a19
+> #pragma omp parallel for private (k_nom_2)

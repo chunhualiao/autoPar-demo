@@ -1,0 +1,6 @@
+make[2]: Entering directory `/home/liao6/rose/freshmaster/buildtree/projects/autoParallelization/tests'
+../autoPar --edg:no_warnings -w -rose:verbose 0 --edg:restrict -rose:autopar:unique_indirect_index  -I/home/liao6/rose/freshmaster/sourcetree/src/frontend/SageIII -c -annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/floatArray.annot -annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/funcs.annot -annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/Index.annot /home/liao6/rose/freshmaster/sourcetree/projects/autoParallelization/tests/interp1_elem.C	
+Assuming all arrays used as indirect indices have unique elements (no overlapping) ...
+
+Automatically parallelized a loop at line:19
+make[2]: Leaving directory `/home/liao6/rose/freshmaster/buildtree/projects/autoParallelization/tests'
