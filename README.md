@@ -1,6 +1,13 @@
 autoPar-demo
 ============
 
+AutoPar is an implementation of automatic parallelization using OpenMP. It can automatically insert OpenMP directives into input serial C/C++ codes. For input programs with existing OpenMP directives, the tool will double check the correctness when the right option is turned on.
+
+For more information, please visit:
+
+https://en.wikibooks.org/wiki/ROSE_Compiler_Framework/autoPar
+
+
 Genenerated files for autoPar
 
 The corresponding input files are located in rose/projects/autoParallelization/tests 
